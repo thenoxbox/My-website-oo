@@ -13,6 +13,7 @@
             font-family: "Madimi One", sans-serif;
             scroll-behavior: smooth;
             box-sizing: border-box;
+            background-color: #fd5444;
         }
         .first{
             font-size: 73px;
@@ -31,7 +32,6 @@
         }
         .body{
             position: relative;
-            padding: 40px 61.440px;
             /* border: 10px solid; */
             width: 100%;
             height: 100%;
@@ -57,28 +57,52 @@
             gap: 5.4px;
         }
         .main h1{
+            color: #f4f6f1;
             line-height: 0; 
         }
         .main h3{
+            color: #f4f6f1;
             font-size: 20px ;
             line-height: 0.6;
         }
+        p{
+            color: #f4f6f1;
+        }
+        h2{
+            color: #fdd34c;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
         span{
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        color: #fdd34c;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
         }
         .main .dbtn a{
             text-decoration: none;
             text-align: center;
-            color: white;
+            color: #fd5444;
             padding: 4px;
-            background-color: black;
-            border: 5px solid black;
+            background-color: #fdd34c;
+            border: 5px solid #fdd34c;
+        }
+        .dbtn a:hover{
+            text-decoration: none;
+            transition-duration: 0.4s;
+            text-align: center;
+            color: #fdd34c;
+            padding: 4px;
+            background-color: #f4f6f1;
+            border: 5px solid #f4f6f1;
         }
         .socials a{
             text-decoration: none;
             padding-right:10px;
-            color: black;
+            color: #f4f6f1;
             font-size: 35px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+        .socials a:hover{
+            color: #fdd34c;
+            transition-duration: 0.4s;
         }
        @media (max-width:600px) {
             .container{
@@ -105,7 +129,7 @@
         <div class="main">
             <h3>Hello there,</h3>
             <h1 class="first">I am</h1>
-            <h1 class="second">Oluchukwu.</h1>
+            <h1 class="second"><span>Oluchukwu.</span></h1>
             <p>I am a <span>Frontend web developer</span> who is passionate about making things work in the best way possible. By using the newest and most powerful tools, I design and build websites that are not only functional but also look great. I am always eager to learn and take on new challenges to create something amazing for the users.</p>
             <div class="dbtn"><a href="/Chukwuemeka Oluchukwu CV (1).doc">DOWNLOAD RESUMÉ</a></div>
             <div class="socials">
@@ -115,9 +139,25 @@
                 <a href="mailto:oluchuks78@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
-        <div class="body">
-            <div class="content">
-                
+            <div class="body">
+                <div class="content">
+                    <div class="about">
+                        <h2>ABOUT</h2>
+                        <div class="firsec">
+                        <p>I'm Oluchukwu, a passionate Frontend Developer specializing in <span> HTML, CSS, and JAVASCRIPT</span>. I have a knack for translating ideas into captivating digital experiences. Beyond coding, I'm a gamer, a movie enthusiast, and a fan of Manga & anime.
+                        </p>
+                        </div>
+                        <div class="seksec">
+                        <p>What sets me apart is my dedication to clear and open communication. I actively listen to your needs and collaborate closely to ensure your vision is realized. My adaptability in communication, transparency in project details, and commitment to timely updates make working with me a smooth and productive experience
+                        </p>
+                        </div>
+                        <div class="thirsec">
+                        <p>I bring a diverse skill set to the table, combining technical expertise with a love for creative storytelling. Let's embark on a digital journey together, where code, creativity, and communication converge to make a meaningful impact in the digital realm.
+                        </p>
+                        </div>
+                    </div>
+                <div class="skills"></div>
+                </div>
             </div>
         </div>
     </div>
