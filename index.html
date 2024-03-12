@@ -8,12 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/779f9d4c6d.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Madimi+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,600&display=swap" rel="stylesheet">
+     <style>
+        /* @font-face {
+            font-family: Myfont;
+            src: url(/font/mediamoure-regular.ttf);
+        } */
         *{
-            font-family: "Madimi One", sans-serif;
+            font-family: "Inter Tight", sans-serif;
             scroll-behavior: smooth;
             box-sizing: border-box;
-            background-color: #fd5444;
+            background-color: #f9fafb;
         }
         .first{
             font-size: 73px;
@@ -33,6 +40,7 @@
         .body{
             position: relative;
             /* border: 10px solid; */
+            align-self: center;
             width: 100%;
             height: 100%;
             display: flex;
@@ -43,12 +51,12 @@
         .body .content{
             position: relative;
             /* background-color: black; */
-            width: 389.120px;
-            height: 520px;
         }
        .main{
             position: sticky;
+            width: 100%;
             top: 0;
+            align-self: center;
             margin-top: 1pc;
             margin-left: 30px;
             display: inline-flex;
@@ -57,63 +65,76 @@
             gap: 5.4px;
         }
         .main h1{
-            padding-right: 10px ;
-            color: #f4f6f1;
+            color: #030712;
             line-height: 0; 
         }
         .main h3{
-            color: #f4f6f1;
+            color: #030712;
             font-size: 20px ;
             line-height: 0.6;
         }
         .main p{
+            font-size: 16px;
             padding-right: 10px;
+            align-self: center;
         }
         p{
-            color: #f4f6f1;
+            color: #030712;
         }
+        
         .about div p{
+            font-size: 20px;
             padding-right: 10px;
         }
         h2{
-            color: #fdd34c;
+            color: #030712;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
         }
         span{
-        color: #fdd34c;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        color: #b6bcc6;
+        text-shadow: 2px 2px 5px rgba(182,188,198,1.000);
         }
-        .main .dbtn a{
+        .dbtn{
+            padding-top: 16px;
+        }
+        .dbtn a{
             text-decoration: none;
             text-align: center;
-            color: #fd5444;
-            padding: 4px;
-            background-color: #fdd34c;
-            border: 5px solid #fdd34c;
+            color: #f9fafb;
+            padding: 14px;
+            background-color:#030712;
+            /* border: 2px solid #fdd34c; */
+            border-radius: 50rem;
         }
         .dbtn a:hover{
             text-decoration: none;
             transition-duration: 0.4s;
             text-align: center;
-            color: #fdd34c;
-            padding: 4px;
-            background-color: #f4f6f1;
-            border: 5px solid #f4f6f1;
+            color: #030712;
+            padding: 14px;
+            background-color: #f9fafb;
+            border: 2px solid #030712;
+            border-radius: 50rem;
+        }
+        .socials{
+            padding-top: none;
         }
         .socials a{
             text-decoration: none;
-            padding-right:10px;
-            color: #f4f6f1;
+            /* padding-right:10px; */
+            color: #030712;
             font-size: 35px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
         }
         .socials a:hover{
-            color: #fdd34c;
+            color: #b6bcc6;
             transition-duration: 0.4s;
         }
        @media (max-width:600px) {
             .container{
-                gap: none;
+                align-self: center;
+                align-items: center;
+                gap: 20px;
                 flex-direction: column;
             }
             .main{
@@ -121,9 +142,10 @@
                 padding-right: 10px;
             }
             .main h1{
-                font-size: 60px;
+                font-size: 50px;
             }
             .body{
+                margin-top: 38px;
                 align-items: center;
             }
             .body .content{
@@ -133,6 +155,7 @@
     </style>
 </head>
 <body>
+    <div class="header"></div>
     <div class="container">
         <div class="header"></div>
         <div class="main">
@@ -140,12 +163,11 @@
             <h1 class="first">I am</h1>
             <h1 class="second"><span>Oluchukwu.</span></h1>
             <p>I am a <span>Frontend web developer</span> who is passionate about making things work in the best way possible. By using the newest and most powerful tools, I design and build websites that are not only functional but also look great. I am always eager to learn and take on new challenges to create something amazing for the users.</p>
-            <div class="dbtn"><a href="/Chukwuemeka Oluchukwu CV (1).doc">DOWNLOAD RESUMÉ</a></div>
             <div class="socials">
                 <a href="https://github.com/thenoxbox"><i class="fa-brands fa-square-github"></i></a>
                 <a href="https://www.linkedin.com/in/chukwuemeka-oluchukwu-089a4624b/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://wa.me/message/Y7UIRNPAEVBKE1?src=qr"><i class="fa-brands fa-square-whatsapp"></i></a>
-                <a href="mailto:oluchuks78@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="mailto:oluchuks78@gmail.com"><i class="fa-solid fa-square-envelope"></i></a>
             </div>
         </div>
             <div class="body">
@@ -153,7 +175,7 @@
                     <div class="about">
                         <h2>ABOUT</h2>
                         <div class="firsec">
-                        <p>I'm Oluchukwu, a passionate Frontend Developer specializing in <span> HTML, CSS, and JAVASCRIPT</span>. I have a knack for translating ideas into captivating digital experiences. Beyond coding, I'm a gamer, a movie enthusiast, and a fan of Manga & anime.
+                        <p>I'm Oluchukwu, a passionate Frontend Developer specializing in <span> HTML, CSS, and Javascript</span>. I have a knack for translating ideas into captivating digital experiences. Beyond coding, I'm a gamer, a movie enthusiast, and a fan of Manga & anime.
                         </p>
                         </div>
                         <div class="seksec">
@@ -165,6 +187,7 @@
                         </p>
                         </div>
                     </div>
+                    <div class="dbtn"><a href="/Chukwuemeka Oluchukwu CV (1).doc">DOWNLOAD RESUMÉ </a></div>
                 <div class="skills"></div>
                 </div>
             </div>
