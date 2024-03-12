@@ -67,7 +67,23 @@
         }
         .main h1{
             color: #030712;
-            line-height: 0; 
+            line-height: 0;
+        } 
+        .main h1 span{
+            animation: pulsate 3s ease-in-out infinite alternate;
+        }
+        .main h1 span:hover{
+            animation: none;
+        }
+        @keyframes pulsate {
+        from {
+        opacity: 1;
+        text-shadow: 0 0 0 #fff;  /* No shadow initially */
+        }
+        to {
+        opacity: 0.5;
+        text-shadow: 0 0 3px #000; /* Create inner glow pulse */
+        }
         }
         .main h3{
             color: #030712;
@@ -89,11 +105,12 @@
         }
         h2{
             color: #030712;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+            
+            /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); */
         }
         span{
         color: #b6bcc6;
-        text-shadow: 2px 2px 5px rgba(182,188,198,1.000);
+        /* text-shadow: 2px 2px 5px rgba(182,188,198,1.000); */
         }
         .dbtn{
             padding-top: 16px;
@@ -105,6 +122,7 @@
             padding: 14px;
             background-color:#030712;
             border: 2px solid #030712;
+            transition: ease-in-out;
             border-radius: 50rem;
         }
         .dbtn a:hover{
