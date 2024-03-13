@@ -10,14 +10,14 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital@0;1&family=Inter+Tight:ital,wght@1,600&display=swap" rel="stylesheet">
      <style>
         /* @font-face {
             font-family: Myfont;
             src: url(/font/mediamoure-regular.ttf);
         } */
         *{
-            font-family: "Inter Tight", sans-serif;
+            font-family: "Exo 2", sans-serif;
             scroll-behavior: smooth;
             box-sizing: border-box;
             background-color: #f9fafb;
@@ -51,6 +51,8 @@
         }
         .body .content{
             position: relative;
+            border-radius: 10px;
+            padding-top: 10px;
             /* background-color: black; */
         }
        .main{
@@ -63,18 +65,20 @@
             display: inline-flex;
             justify-content: center;
             flex-direction: column;
+            padding: 10px;
             gap: 5.4px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 4px rgb(0, 0, 0);
         }
         .main h1{
             color: #030712;
             line-height: 0;
         } 
         .main h1 span{
-            animation: pulsate 3s ease-in-out infinite alternate;
+            color: black;
+            animation: pulsate 2.0s ease-in-out infinite alternate;
         }
-        .main h1 span:hover{
-            animation: none;
-        }
+        
         @keyframes pulsate {
         from {
         opacity: 1;
@@ -82,7 +86,8 @@
         }
         to {
         opacity: 0.5;
-        text-shadow: 0 0 3px #000; /* Create inner glow pulse */
+        color: #b6bcc6;
+        text-shadow: 0 0 3px #b6bcc6; /* Create inner glow pulse */
         }
         }
         .main h3{
@@ -91,9 +96,9 @@
             line-height: 0.6;
         }
         .main p{
-            font-size: 16px;
-            padding-right: 10px;
-            align-self: center;
+            font-size: 20px;
+            margin-right: 94px;
+            /* align-self: center; */
         }
         p{
             color: #030712;
@@ -109,11 +114,11 @@
             /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); */
         }
         span{
-        color: #b6bcc6;
+        color: #9da8b8;
         /* text-shadow: 2px 2px 5px rgba(182,188,198,1.000); */
         }
         .dbtn{
-            padding-top: 16px;
+            padding-top: 16px; 
         }
         .dbtn a{
             text-decoration: none;
@@ -122,10 +127,24 @@
             padding: 14px;
             background-color:#030712;
             border: 2px solid #030712;
-            transition: ease-in-out;
             border-radius: 50rem;
+            transform: translateZ(0);
+            transition-duration: 0.6s;
+            animation: button 2.5s ease-in-out infinite alternate;
+        }
+        @keyframes button{
+            from {
+            background-color:#030712;
+            border: 2px solid #030712;
+            }
+            to {
+            color: #030712;
+            background-color: #f9fafb;
+            border: 2px solid #030712;
+            }
         }
         .dbtn a:hover{
+            cursor: pointer;
             text-decoration: none;
             transition-duration: 0.6s;
             text-align: center;
@@ -134,6 +153,12 @@
             background-color: #f9fafb;
             border: 2px solid #030712;
             border-radius: 50rem;
+            animation: none;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9),  /* Subtle bottom-right shadow */
+            -2px -2px 5px rgba(255, 255, 255, 0.7); /* Top-left highlight */
+        }
+        .dbtn a:active {
+            transform: translateZ(-3px);  /* Button pressed state (slight downward shift) */
         }
         .socials{
             padding-top: none;
@@ -144,10 +169,16 @@
             color: #030712;
             font-size: 35px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+            transform: translateZ(0);
+            transition-duration: 0.4s;
         }
         .socials a:hover{
-            color: #b6bcc6;
+            color: #9da8b8;
+            /* transform: translateZ(0); */
             transition-duration: 0.4s;
+        }
+        .socials:active {
+            transform: translateZ(-3px);  /* Button pressed state (slight downward shift) */
         }
        @media (max-width:600px) {
             .container{
@@ -159,6 +190,8 @@
             .main{
                 position: relative;
                 padding-right: 10px;
+                border: 1px solid black;
+                box-shadow: 4px 8px 1px rgb(0, 0, 0);
             }
             .main h1{
                 font-size: 50px;
@@ -168,6 +201,7 @@
                 align-items: center;
             }
             .body .content{
+                padding-top: none;
                 width: 90%;
             }
        }
@@ -176,6 +210,7 @@
 <body>
     <div class="header"></div>
     <div class="container">
+        <div class="header"></div>
         <div class="main">
             <!-- <div class="header"></div> -->
             <h3>Hello there,</h3>
@@ -207,7 +242,10 @@
                         </div>
                     </div>
                     <div class="dbtn"><a href="/Chukwuemeka Oluchukwu CV (1).doc">DOWNLOAD RESUMÉ </a></div>
-                <div class="skills"></div>
+                <div class="skills">
+                    
+                </div>
+                </div>
                 </div>
             </div>
         </div>
